@@ -37,7 +37,7 @@ img.slide {
 
 img.exit {
     transition: 1s;
-    left: 1000px;
+    left: 2000px;
 }
 
 img.slide:hover {
