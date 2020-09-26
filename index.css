@@ -35,6 +35,11 @@ img.slide {
     left: 40vw;
 }
 
+img.exit {
+    transition: 1s;
+    left: 1000px;
+}
+
 img.slide:hover {
     animation: grow 1s;
     transform: scale(1.2);
