@@ -1,8 +1,74 @@
-.fieldset {
+body {
+    background-color: #ffff00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto',sans-serif;;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 117px;
+    margin-bottom: 200px;
+}
+
+form {
+    margin-top: 100px;
+    background: #ffffffa6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+fieldset {
     display: block;
     border: none;
     margin: 50px auto;
     max-width: 500px;
+}
+
+.row {
+    padding-top: 25px;
+}
+
+[name]:not(#agree) {
+    min-width: 66%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px #b3aeae solid;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #6c83dd;
+    text-align: center;
+    transition: all 0.2s;
+    border: 1px #000 solid;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#4095c6;
+}
+
+button[disabled] {
+    background: #808080;
+    cursor: auto;
 }
     
 .heading {
@@ -10,17 +76,10 @@
     width: 100%;
     font-size: 2rem;
     line-height: 1.2;
-    border-bottom: 1px solid #ccc;
     padding: 0 0 5px 0;
     margin: 0 0 10px 0;
-}
-
-form {
-    margin-top: 100px;
-    background: #ffffff82;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    padding-top: 20px;
+    text-align: center;
 }
 
 img {
@@ -32,7 +91,7 @@ img {
 
 img.slide {
     transition: 1s;
-    left: 40vw;
+    left: 42vw;
 }
 
 img.exit {
@@ -54,25 +113,55 @@ img.slide:hover {
     }
 }
 
-.row {
-    padding-top: 25px;
+#message {
+    max-width: 300px;
 }
 
-[name] {
-    min-width: 66%;
+.hidden {
+    display: none;
 }
 
-body {
-    background-color: #ffff00;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+input[type='checkbox'] {
+    position: absolute !important;
+    opacity: 0;
+}
+
+input[type='checkbox'] + label {
+    display: block;
     position: relative;
+    padding: 0 32px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 117px;
-    margin-bottom: 200px;
+input[type='checkbox'] + label::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: solid 1px #b3aeae;
+    border-radius: 3px;
+    left: 0;
+}
+
+input[type='checkbox']:checked + label::before {
+    background: #6c83dd;
+}
+
+input[type='checkbox']:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    height: 6px;
+    width: 13px;
+    transform: rotate(-45deg);
+}
+
+input[type='checkbox']:focus + label::before {
+    outline: #5d9dd5 solid 1px;
+    box-shadow: 0 0px 8px #5e9ed6;
 }

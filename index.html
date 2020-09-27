@@ -11,24 +11,27 @@
     <body>
         <main>
             <h1>Awesome Form</h1>
-            <img src="./cute-turtle-png-clipart.png" alt=""/>
-            <form action="" method="post">
+            <div aria-live="polite">
+                <img id="turtle" src="./cute-turtle-png-clipart.png" alt=""/>
+                <img id="message" class="hidden" src="./Download-Thank-You-PNG-Image.png" alt="Thank you">
+            </div>
+            <form id="form" action="" method="post">
                 <fieldset>
                     <legend class="heading">Sign up!</legend>
                     <div class="row">
-                        <label for="name">Name</label>
+                        <div class="label-container"><label for="name">Name</label></div>
                         <input type="text" name="name" id="name" value="" autocorrect="off" required />
                     </div>
                     <div class="row">
-                        <label for="email">Email</label>
+                        <div class="label-container"><label for="email">Email</label></div>
                         <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" required />
                     </div>
                     <div class="row">
-                        <label for="message">Your message</label>
-                        <textarea name="message" id="message" rows="10"></textarea>
+                        <input type="checkbox" name="agree" id="agree" required />
+                        <label for="agree">I agree</label>
                     </div>
                     <div class="row">
-                        <button type="submit">Submit</button>    
+                        <button id="submitBtn" type="submit" disabled>Submit</button>    
                     </div>
                 </fieldset>
             </form>
