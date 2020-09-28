@@ -133,7 +133,7 @@ img.slide:hover {
 }
 
 .checkbox.checked {
-    background: #3170b7;
+    background: #6c83dd;
 }
 
 input[type='checkbox'] {
@@ -164,7 +164,7 @@ input[type='checkbox']:checked + label::before {
     background: #6c83dd;
 }
 
-input[type='checkbox']:checked + label::after {
+input[type='checkbox']:checked + label::after, .checkbox.checked::after {
     content: '';
     position: absolute;
     top: 4px;
