@@ -4,10 +4,6 @@ function initPage () {
     const form = document.getElementById('form');
     const btn = document.getElementById('submitBtn');
 
-    form.addEventListener("change", () => {
-        btn.disabled = !form.checkValidity()
-    });
-
     setTimeout(function() {
         icon.classList.add('slide');
     }, 500);
