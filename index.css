@@ -51,10 +51,10 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     font-family: 'Roboto',sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     color: #FFFFFF;
-    font-size: 16px;
-    background-color: #6c83dd;
+    font-size: 19px;
+    background-color: #5a70c3;
     text-align: center;
     transition: all 0.2s;
     border: 1px #000 solid;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover{
-    background-color:#4095c6;
+    background-color: #317aa5;
 }
 
 button[disabled] {
@@ -119,6 +119,21 @@ img.slide:hover {
 
 .hidden {
     display: none;
+}
+
+.checkbox {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.checkbox.checked {
+    background: #3170b7;
 }
 
 input[type='checkbox'] {

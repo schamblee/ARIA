@@ -2,13 +2,12 @@ function initPage () {
     const icon = document.getElementById('turtle');
     const message = document.getElementById('message');
     const form = document.getElementById('form');
-    const btn = document.getElementById('submitBtn');
 
     setTimeout(function() {
         icon.classList.add('slide');
     }, 500);
 
-    document.getElementsByTagName('form')[0].addEventListener('submit', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
         icon.classList.add('exit');
         setTimeout(function() {

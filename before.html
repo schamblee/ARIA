@@ -27,16 +27,22 @@
                         <div class="label-container"><label for="email">Email</label></div>
                         <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" required />
                     </div>
+
+
                     <div class="row">
-                        <input type="checkbox" name="agree" id="agree" required />
-                        <label for="agree">I agree</label>
+                        <span class="checkbox" aria-live="off" id="agree"
+                            aria-label="I agree" tabindex="0" role="checkbox" aria-checked="false"
+                            aria-required="true"></span>
+                        <label for="agree" data-name="agree">I agree</label>
                     </div>
+
+
                     <div class="row">
                         <button type="submit" id="submitBtn" type="submit">Submit</button>    
                     </div>
                 </fieldset>
             </form>
         </main>
-        <script src="./index.js"></script>
+        <script src="./before.js"></script>
     </body>
 </html>
